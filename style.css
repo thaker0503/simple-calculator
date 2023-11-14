@@ -1,21 +1,21 @@
 * {
     box-sizing: border-box;
-  }
+}
 
-  html {
+html {
     font-size: 62.5%;
-  }
+}
 
-  body {
+body {
     background-color: #000;
     color: #fff;
     font-family: "Roboto", sans-serif;
     font-size: 1.6rem;
     line-height: 1.5;
     margin: 0;
-  }
+}
 
-  .calculator {
+.calculator {
     background-color: #000;
     border-radius: 0.5rem;
     box-shadow: 0 0 1rem rgba(0, 0, 0, 0.5);
@@ -23,9 +23,9 @@
     max-width: 40rem;
     padding: 2rem;
     width: 100%;
-  }
+}
 
-  .calculator__display {
+.calculator__display {
     background-color: #333;
     border-radius: 0.5rem;
     color: #fff;
@@ -35,15 +35,18 @@
     padding: 1rem 2rem;
     text-align: right;
     width: 100%;
-  }
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
 
-  .calculator__keys {
+.calculator__keys {
     display: grid;
     grid-gap: 1rem;
     grid-template-columns: repeat(4, 1fr);
-  }
+}
 
-  .calculator__keys > * {
+.calculator__keys>* {
     background-color: #fff;
     border: 0;
     border-radius: 0.5rem;
@@ -53,60 +56,60 @@
     font-weight: 700;
     padding: 2rem 1.5rem;
     text-align: center;
-  }
+}
 
-  .calculator__keys > *:active {
+.calculator__keys>*:active {
     background-color: #ccc;
-  }
+}
 
-  .key--operator {
+.key--operator {
     background-color: #f58220;
     color: #fff;
-  }
+}
 
-  .key--operator:active {
+.key--operator:active {
     background-color: #f99a66;
-  }
+}
 
-  .key--equal {
+.key--equal {
     background-color: #f58220;
     color: #fff;
     grid-column: -2 / -1;
-  }
+}
 
-  .key--equal:active {
+.key--equal:active {
     background-color: #f99a66;
-  }
+}
 
-  .key--clear {
+.key--clear {
     background-color: #333;
     color: #fff;
     grid-column: 1 / 3;
-  }
+}
 
-  .key--clear:active {
+.key--clear:active {
     background-color: #666;
-  }
+}
 
-  .key--back {
+.key--back {
     background-color: #333;
     color: #fff;
     grid-column: 3 / 5;
-  }
+}
 
-  .key--back:active {
+.key--back:active {
     background-color: #666;
-  }
+}
 
-  .key--number {
+.key--number {
     background-color: #333;
     color: #fff;
-  }
+}
 
-  .key--number:active {
+.key--number:active {
     background-color: #666;
-  }
+}
 
-  .is-depressed {
+.is-depressed {
     background-color: #666;
-  }
+}
